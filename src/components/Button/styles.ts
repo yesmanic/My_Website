@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
 export const ButtonComponent = styled.div`
-    width: 100%;
     display: flex;
     justify-content: center;
 
     margin-bottom: 5rem;
+
+    .dark {
+        display: ${props => props.theme.colors.type === 'dark'?'flex':'none'};
+    }
+    .light {
+        display: ${props => props.theme.colors.type === 'light'?'flex':'none'};
+    }
 `

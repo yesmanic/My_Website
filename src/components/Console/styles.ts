@@ -6,13 +6,20 @@ export const ConsoleComponent = styled.div`
     border-radius: 1rem;
     border: 1px solid ${props => props.theme.colors.consoleStroke};
 
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
 
     color: ${props => props.theme.colors.consoleText};
 
     margin-bottom: 2rem;
 
     font-family: "JetBrains Mono";
+    
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }
 
     .header {
         display: flex;
@@ -58,6 +65,13 @@ export const ConsoleComponent = styled.div`
                 margin-left: 2rem;
             }
         }
+    }
+
+    .photo {
+        max-height: 20rem;
+        width: auto;
+
+        align-self: center;
     }
 
 `

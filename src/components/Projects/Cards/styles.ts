@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const CardsComponent = styled.div`
 
     margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
 
     .image {
         width: 100%;
@@ -28,7 +30,7 @@ export const CardsComponent = styled.div`
         font-weight: 600;
     }
 
-    div {
+    div.see-project {
         display: flex;
         align-items: center;
         color: ${props => props.theme.colors.primary};
@@ -38,5 +40,25 @@ export const CardsComponent = styled.div`
             width: 4rem;
             margin-left: 1.5rem;
         }
+    }
+
+    @media (min-width: 40rem) {
+        flex-direction: row;
+
+        gap: 2rem;
+
+        width: min(100%, 800px);
+        margin-left: auto;
+        margin-right: auto;
+
+        .details {
+            width: min(100%, 600px);
+        }
+
+        .image {
+            margin-bottom: 0;
+            height: 13rem;
+        }
+
     }
 `

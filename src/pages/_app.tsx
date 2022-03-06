@@ -7,7 +7,7 @@ import { lightTheme, darkTheme } from '../styles/themes'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={darkTheme}>
         <GlobalStyle /> 
         <Component {...pageProps} />
       </ThemeProvider>

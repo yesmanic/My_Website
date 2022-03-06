@@ -12,5 +12,6 @@ export const HeaderComponent = styled.div`
 
     img {
         height: 100%;
+        visibility: hidden;
     }
 `

@@ -13,9 +13,13 @@ export default function Home() {
     <WraperComponent>
       <div className='container'>
         <Header />
-        <Presentation />
-        <Console />
-        <Button />
+        <div className='presentation'>
+          <Presentation />
+          <div className='console'>
+            <Console />
+            <Button />
+          </div>
+        </div>
         <Skills />
         <Projects />
         <Contact />

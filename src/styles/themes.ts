@@ -7,7 +7,8 @@ export const lightTheme = {
         consoleBackground: '#FFFFFF',
         consoleStroke: '#CACACA',
         consoleText: '#606060',
-        consoleTitle: '#909090'
+        consoleTitle: '#909090',
+        jsonText: '#988900'
     }
 }
 
@@ -20,6 +21,7 @@ export const darkTheme = {
         consoleBackground: '#171717',
         consoleStroke: '#4D4D4D',
         consoleText: '#FFFFFF',
-        consoleTitle: '#FFFFFF'
+        consoleTitle: '#FFFFFF',
+        jsonText: '#FFF496'
     }
 }

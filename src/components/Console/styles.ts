@@ -30,13 +30,15 @@ export const ConsoleComponent = styled.div`
         justify-content: space-between;
         align-items: center;
 
+        color: ${props => props.theme.colors.text}
+
         img {
             height: 100%;
         }
 
         div {
             height: 100%;
-            background-color: #f0f0f0;
+            background-color: ${props => props.theme.colors.consoleStroke};
             border-radius: 1rem;
             padding: 0.1rem 2rem;
 
@@ -53,7 +55,7 @@ export const ConsoleComponent = styled.div`
     }
 
     .content {
-        color: #a69000;
+        color: ${props => props.theme.colors.jsonText};
         line-height: 1.8rem;
 
         font-size: 1rem;

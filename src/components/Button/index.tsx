@@ -3,14 +3,14 @@ import { lightTheme, darkTheme } from '../../styles/themes'
 
 export default function Button() {
     return (
-        <ButtonComponent>
-            <div className="dark">
-                <img src="dark-cv.svg" alt="" />
-            </div>
+        <ButtonComponent >
+            <a className="dark" href='/cv.pdf'>
+                <img src="cv-dark.svg" alt="" />
+            </a>
 
-            <div className="light">
-                <img src="light-cv.svg" alt="" />
-            </div>
+            <a className="light" href='/cv.pdf'>
+                <img src="cv.svg" alt="" />
+            </a>
         </ButtonComponent>
     );
 };

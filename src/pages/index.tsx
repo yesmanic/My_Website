@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <WraperComponent>
       <div className='container'>
-        <Header />
         <div className='presentation'>
           <Presentation />
           <div className='console'>

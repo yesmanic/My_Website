@@ -28,4 +28,11 @@ export const ContactComponent = styled.div`
         margin-top: 2rem;
         color: ${props => props.theme.colors.primary}
     }
+
+    .dark {
+        display: ${props => props.theme.colors.type === 'dark'?'flex':'none'};
+    }
+    .light {
+        display: ${props => props.theme.colors.type === 'light'?'flex':'none'};
+    }
 `

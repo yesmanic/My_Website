@@ -10,7 +10,8 @@ declare module 'styled-components' {
             consoleBackground: string;
             consoleStroke: string;
             consoleText: string;
-            consoleTitle:string
+            consoleTitle:string;
+            jsonText: string
         }
     }
 }

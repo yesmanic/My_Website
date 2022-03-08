@@ -1,25 +1,20 @@
 import type { AppProps } from 'next/app'
-import { useState } from 'react';
 import { ThemeProvider } from 'styled-components'
 import SwitchTheme from '../components/SwitchTheme';
 
 import GlobalStyle from '../styles/global'
 import { lightTheme, darkTheme } from '../styles/themes'
 
-export default function App({ Component, pageProps }: AppProps) {
-  const [theme, setTheme] = useState(darkTheme);
+import { setCookie, parseCookies } from 'nookies'
+import { useState } from 'react';
 
-  const toggleTheme = () => {
-    setTheme(theme.colors.type === 'light' ? darkTheme : lightTheme)
-  }
+export default function App({ Component, pageProps }: AppProps) {
   
+  console.log(pageProps)
+
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle /> 
-        <SwitchTheme toggleTheme={toggleTheme} />
         <Component {...pageProps} />
-      </ThemeProvider>
     </>
   )
 }

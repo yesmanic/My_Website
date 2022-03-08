@@ -7,12 +7,12 @@ export const CardsComponent = styled.div`
     flex-direction: column;
 
     .image {
+        object-fit: cover;
         width: 100%;
         height: 10rem;
         border-radius: 1rem;
         margin-bottom: 1rem;
 
-        object-fit: cover;
     }
 
     h2 {

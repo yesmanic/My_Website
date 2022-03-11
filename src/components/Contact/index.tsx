@@ -7,15 +7,17 @@ export default function Contact() {
 
             <div>
                 <div className="light">
-                    <img src="linkedin.svg" alt="LinkedIn" />
-                    <img src="github.svg" alt="GitHub" />
-                    <img src="telegram.svg" alt="Telegram" />
-                </div>
+                    <a href="https://www.linkedin.com/in/yesman-choque/" target="_blank">
+                        <img src="linkedin.svg" alt="LinkedIn" />
+                    </a>
 
-                <div className="dark">
-                    <img src="linkedin-dark.svg" alt="LinkedIn" />
-                    <img src="github-dark.svg" alt="GitHub" />
-                    <img src="telegram-dark.svg" alt="Telegram" />
+                    <a href="https://github.com/yesmanic" target="_blank">
+                        <img src="github.svg" alt="GitHub" />
+                    </a>
+
+                    <a href="https://t.me/yesmanic" target="_blank">
+                        <img src="telegram.svg" alt="Telegram" />
+                    </a>
                 </div>
             </div>
 

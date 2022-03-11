@@ -5,7 +5,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        transition: background-color 0.6s, border-color 0.6s, color 0.6s;
+        transition: background-color 0.6s, border-color 0.6s, color 0.6s, filter 0.6s;
     }
 
     body {

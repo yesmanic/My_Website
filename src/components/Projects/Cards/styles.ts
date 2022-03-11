@@ -11,7 +11,9 @@ export const CardsComponent = styled.div`
         width: 100%;
         height: 10rem;
         border-radius: 1rem;
+        border: 1px solid ${props => props.theme.colors.consoleStroke};
         margin-bottom: 1rem;
+
 
     }
 

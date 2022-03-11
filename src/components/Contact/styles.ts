@@ -24,15 +24,16 @@ export const ContactComponent = styled.div`
         margin-bottom: 5rem;
     }
 
+    
     .email {
         margin-top: 2rem;
         color: ${props => props.theme.colors.primary}
     }
-
-    .dark {
-        display: ${props => props.theme.colors.type === 'dark'?'flex':'none'};
-    }
-    .light {
-        display: ${props => props.theme.colors.type === 'light'?'flex':'none'};
+    
+    a {
+        cursor: pointer;
+        img {
+            filter: ${props => props.theme.colors.type === 'dark'?'invert(1)':'invert(0)'}
+        }
     }
 `

@@ -1,5 +1,4 @@
 import Button from '../components/Button'
-import Header from '../components/Header'
 import Presentation from '../components/Presentation'
 import Console from '../components/Console'
 import Skills from '../components/Skills'
@@ -10,15 +9,14 @@ import { WraperComponent } from '../components/Wraper/styles'
 
 import { parseCookies, setCookie } from 'nookies'
 import { lightTheme, darkTheme } from '../styles/themes'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import SwitchTheme from '../components/SwitchTheme'
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../styles/global'
+import Head from 'next/head'
 
 export default function Home(props) {
-
-  console.log(props)
   const [theme, setTheme] = useState(() => {
     if (props) {
       return props.theme === 'light' ? lightTheme : darkTheme
@@ -26,7 +24,6 @@ export default function Home(props) {
       return lightTheme
     }
   })
-
   
   
   setCookie(null, 'theme', theme.colors.type, {
@@ -42,6 +39,9 @@ export default function Home(props) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <Head>
+        <title>Home</title>
+      </Head>
       <WraperComponent>
         <div className='container'>
           <SwitchTheme toggleTheme={toggleTheme}/>

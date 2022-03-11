@@ -1,5 +1,4 @@
 import { ButtonComponent } from "./styles";
-import { lightTheme, darkTheme } from '../../styles/themes'
 
 
 interface Props {

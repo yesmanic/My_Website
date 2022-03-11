@@ -30,11 +30,12 @@ export const CardsComponent = styled.div`
         font-weight: 600;
     }
 
-    div.see-project {
+    .see-project {
         display: flex;
         align-items: center;
         color: ${props => props.theme.colors.primary};
         font-weight: 700;
+        cursor: pointer;
 
         img {
             width: 4rem;

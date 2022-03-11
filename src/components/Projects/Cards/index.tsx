@@ -4,6 +4,7 @@ type CardsProps = {
     name: string,
     img: string,
     description: string,
+    link: string
 }
 
 export default function Cards(props: CardsProps) {
@@ -17,10 +18,10 @@ export default function Cards(props: CardsProps) {
                     <h2>{props.name}</h2>
                     <p dangerouslySetInnerHTML={{__html:props.description}} /> 
                     
-                    <div className="see-project">
+                    <a className="see-project" href={props.link} target="_blank">
                         Ver projeto
                         <img src="/arrow.svg" alt="arrow" />
-                    </div>
+                    </a>
                 </div>
         </CardsComponent>
     )

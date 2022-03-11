@@ -4,11 +4,11 @@ import { lightTheme, darkTheme } from '../../styles/themes'
 export default function Button() {
     return (
         <ButtonComponent >
-            <a className="dark" href='/cv.pdf'>
+            <a className="dark" href='/cv.pdf' target="_blank">
                 <img src="cv-dark.svg" alt="" />
             </a>
 
-            <a className="light" href='/cv.pdf'>
+            <a className="light" href='/cv.pdf' target="_blank">
                 <img src="cv.svg" alt="" />
             </a>
         </ButtonComponent>

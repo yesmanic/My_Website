@@ -6,15 +6,19 @@ export const CardsComponent = styled.div`
     display: flex;
     flex-direction: column;
 
+    
     .image {
         object-fit: cover;
-        width: 100%;
+        width: min(45vw, 27rem);
         height: 10rem;
         border-radius: 1rem;
         border: 1px solid ${props => props.theme.colors.consoleStroke};
         margin-bottom: 1rem;
+    }
 
-
+    .details {
+        //width: 600px;
+        //width: 45vw;
     }
 
     h2 {
@@ -45,6 +49,13 @@ export const CardsComponent = styled.div`
         }
     }
 
+    @media (max-width: 40rem) {
+        .image {
+            
+            width: 100%;
+        }
+    }
+
     @media (min-width: 40rem) {
         flex-direction: row;
 
@@ -55,12 +66,13 @@ export const CardsComponent = styled.div`
         margin-right: auto;
 
         .details {
-            width: min(100%, 600px);
+            //width: min(100%, 600px);
         }
 
         .image {
             margin-bottom: 0;
             height: 13rem;
+            //width: 100%;
         }
 
     }

@@ -5,7 +5,7 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        transition: background-color 0.6s, border-color 0.6s, color 0.6s, filter 0.6s;
+        //transition: background-color 0.6s, border-color 0.6s, color 0.6s, filter 0.6s;
     }
 
     body {
@@ -13,6 +13,11 @@ export default createGlobalStyle`
         width: 100%;
         padding: 2rem;
         color: ${props => props.theme.colors.text};
+        transition: background-color 0.6s, color 0.6s;
+
+        div {
+            transition: border-color 0.6s, filter 0.6s, background-color 0.6s;
+        }
     }
 
     body, input, textarea, button {

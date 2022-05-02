@@ -25,12 +25,10 @@ export default function Home(props) {
     }
   })
   
-  
   setCookie(null, 'theme', theme.colors.type, {
     path: '/',
     maxAge: 60 * 60 * 24 * 7,
   })
-
 
   const toggleTheme = () => {
     setTheme(theme.colors.type === 'dark' ? lightTheme : darkTheme)

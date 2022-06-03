@@ -20,11 +20,10 @@ export default function Console() {
                 <div className="content">
 
                     <span>{`{`}
-                        <span>"profissão": "programador"</span>
-                        <span>{`"linguagem": ["JavaScript", "Java"]`}</span>
+                        <span>{`"linguagem": ["JavaScript", "Java", "C", "C++"],`}</span>
                         <span>{`"educação" {`}
-                            <span>"Udemy": "Cursos de JS"</span>
-                            <span>"Livros": "Java 8: como programar"</span>
+                            <span>"Bacharelado": "Sistemas de Informação",</span>
+                            <span>"Curso": "Carrefour Web Developer"</span>
                             {`}`}
                         </span>
                         {`}`}

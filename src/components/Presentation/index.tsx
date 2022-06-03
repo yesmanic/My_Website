@@ -10,7 +10,7 @@ export default function Presentation() {
 
             <div>
                 <h1>Desenvolvedor</h1>
-                <h1>Frontend</h1>
+                <h1>Web</h1>
             </div>
         </PresentationComponent>
     )
